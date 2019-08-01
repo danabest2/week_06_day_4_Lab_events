@@ -13,6 +13,8 @@ const form = document.querySelector('#new-item-form');
     formResult.textContent = `${title} ${author} ${category}`;
     const list = document.querySelector('#reading-list');
     list.appendChild(formResult);
+
+    const form = document.querySelector('#new-item-form').reset();
   });
 
 
