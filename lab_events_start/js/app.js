@@ -7,8 +7,12 @@ const form = document.querySelector('#new-item-form');
     const title = event.target.title.value;
     const author = event.target.author.value;
     const category = event.target.category.value;
-    const formResult = document.querySelector('#reading-list');
+    // const formResult = document.querySelector('#reading-list');
+    // formResult.textContent = `${title} ${author} ${category}`;
+    const formResult = document.createElement('li');
     formResult.textContent = `${title} ${author} ${category}`;
+    const list = document.querySelector('#reading-list');
+    list.appendChild(formResult);
   });
 
 
